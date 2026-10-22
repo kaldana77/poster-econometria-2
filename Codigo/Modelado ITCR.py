@@ -21,7 +21,7 @@ df = pd.read_csv(Ruta_exp)
 # %% Preparamos los datos
 df.columns = ["Fecha", "ITCR_ipp", "ITCR_ipc"]
 df["Fecha"] = pd.to_datetime(df["Fecha"])
-df = df.set_index("Fecha")
+df = df.set_index("Fecha") 
 
 # %% Grafico serie de tiempo en nivel
 sns.set_style("whitegrid")
